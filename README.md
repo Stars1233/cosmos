@@ -1167,6 +1167,8 @@ Post-train Cosmos 3 on your own data with the supervised fine-tuning (SFT) cookb
 
 These cookbooks run on the [Cosmos Framework](https://github.com/NVIDIA/cosmos-framework), NVIDIA's end-to-end Physical AI framework for training and serving world models. For the full post-training reference — every config field, raw `torchrun`, resuming, and advanced parallelism — see the [Cosmos Framework training guide](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/training.md).
 
+For agent-driven Cosmos 3 Reasoner post-training, see [TAO agent skills](cookbooks/cosmos3/reasoner/finetune/README.md#tao-agent-skills), including tutorials for video question answering and Automated Optical Inspection (AOI).
+
 ### Export and Convert Checkpoints
 
 Training writes sharded PyTorch Distributed Checkpoints (DCP) under `outputs/train/<project>/<group>/<name>/checkpoints/`. Two Cosmos Framework scripts turn a finished run into portable, inference-ready formats. Run both from a framework checkout with its venv active (see the recipe READMEs for setup).
